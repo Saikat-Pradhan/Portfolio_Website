@@ -51,7 +51,7 @@ const Hiring = () => {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-900 flex pt-[2cm] md:items-center lg:items-center justify-center p-2">
+    <div className="min-h-screen bg-neutral-900 flex pt-[2cm] lg:pt-0 md:items-center lg:items-center justify-center p-2">
       <div className="h-fit bg-gradient-to-r from-blue-500 via-blue-400 to-black p-[6px] rounded-lg w-full max-w-md">
         <Form className="bg-neutral-800 p-5" onSubmit={handleSubmit}>
           

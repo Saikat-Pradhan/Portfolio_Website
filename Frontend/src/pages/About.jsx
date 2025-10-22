@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='h-screen bg-neutral-900 p-[0.5cm] overflow-scroll'>
-      <div className="container bg-black mx-auto flex px-5 py-12 md:flex-row flex-col rounded-[10px] items-center shadow-xl shadow-neutral-500">
+    <div className='h-screen bg-neutral-900 p-[0.5cm] lg:p-0 lg:flex lg:items-center overflow-scroll'>
+      <div className="container bg-black mx-auto flex px-5 py-12 md:flex-row flex-col rounded-[10px] items-center shadow-xl shadow-neutral-500 lg:flex lg:justify-center">
         <div className="lg:flex md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-[1cm] font-medium text-blue-500">
             About Me

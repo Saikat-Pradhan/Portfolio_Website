@@ -5,7 +5,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex pt-[2cm] md:items-center lg:items-center justify-center h-screen w-screen bg-neutral-900 px-3'>
+    <div className='flex pt-[2cm] lg:pt-0 md:items-center lg:items-center justify-center h-screen w-screen bg-neutral-900 px-3'>
       <div className='text-center h-[14cm] mt-[6px] p-6 bg-black rounded-[0.5cm] md:w-[15cm] lg:w-[20cm] shadow-2xl shadow-neutral-500'>
         <p className='mt-[2cm] text-[0.7cm] text-white'>Hello, I'm</p>
         <h1 className='text-[1rem] font-serif text-blue-400 mt-[0.5cm]'>Saikat Pradhan</h1>

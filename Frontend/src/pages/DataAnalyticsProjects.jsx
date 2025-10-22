@@ -18,7 +18,7 @@ const DataAnalyticsProjects = () => {
                 to={project.link}
                 key={index}
                 aria-label={`View details for ${project.title}`}
-                className="cursor-pointer bg-gradient-to-r from-blue-500 via-blue-400 to-black rounded-xl lg:w-1/3 md:w-1/2 w-full p-[6px] transform transition duration-500 hover:scale-105 animate-fadeIn"
+                className="cursor-pointer bg-gradient-to-r from-blue-500 via-blue-400 to-black rounded-xl lg:w-1/3 md:w-1/2 w-full p-[6px] transform transition duration-500 lg:hover:scale-105 animate-fadeIn"
               >
                 <div className="bg-neutral-900 rounded-xl p-4">
                   <div className="relative h-48 rounded overflow-hidden">

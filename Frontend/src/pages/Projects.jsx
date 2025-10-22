@@ -15,7 +15,7 @@ const Projects = () => {
             ].map((project, index) => (
               <div
                 key={index}
-                className="lg:w-1/3 md:w-1/2 w-full p-2 transform transition duration-500 rounded-xl hover:scale-105 text-center bg-gradient-to-r from-blue-500 via-blue-400 to-black animate-fadeIn cursor-pointer"
+                className="lg:w-1/3 md:w-1/2 w-full p-2 transform transition duration-500 rounded-xl lg:hover:scale-105 text-center bg-gradient-to-r from-blue-500 via-blue-400 to-black animate-fadeIn cursor-pointer"
                 onClick={() => navigate(project.link)}
               >
                 <div className="p-4 h-full flex items-center bg-neutral-900 rounded-xl">
