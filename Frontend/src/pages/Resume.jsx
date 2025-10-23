@@ -17,7 +17,7 @@ const Resume = () => {
           <img src="/ResumePic.png" alt="Resume" />
         </div>
         <BiSolidDownload
-          className="absolute top-[15.5cm] lg:top-[16cm] right-7 size-[2rem] p-[1px] rounded-full text-black bg-white border-[2px] border-black cursor-pointer animate-bounce"
+          className="absolute top-[16cm] lg:top-[16cm] right-7 size-[2rem] p-[1px] rounded-full text-black bg-white border-[2px] border-black cursor-pointer animate-bounce"
           onClick={ResumeDownload}
         />
       </div>
