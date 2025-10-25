@@ -11,7 +11,8 @@ const WebDevelopmentProjects = () => {
             {[
               { title: "Spotify Clone", img: "https://img.freepik.com/premium-photo/cartoon-lofi-young-manga-style-girl-studying-while-listening-music_908344-1536.jpg", link: "https://spotify-mp3-saikat-pradhan-xfac.onrender.com/" },
               { title: "HobbyHub", img: "https://cdn.openart.ai/uploads/image_nhWjXBp1_1728552718272_raw.jpg", link: "https://hobby-hub-saikat-pradhan-t21r.onrender.com" },
-              { title: "Blogify", img: "https://pixelweavers.in/wp-content/uploads/2018/07/blog.jpg", link: "https://blogify-saikat-pradhan-d21y.onrender.com"}
+              { title: "Blogify", img: "https://pixelweavers.in/wp-content/uploads/2018/07/blog.jpg", link: "https://blogify-saikat-pradhan-d21y.onrender.com"},
+              { title: "DoubtlessAI", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6uPUl6vL4Bg5s8t9_SZx-t-1_7qeuQItxGw&s", link: "https://doubtlessai-saikat-pradhan.onrender.com"}
             ].map((project, index) => (
               <NavLink
                 to={project.link}
