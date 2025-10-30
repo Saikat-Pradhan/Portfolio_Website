@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { sendContactEmail } from '../services/emailService';
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -28,14 +30,14 @@ const Contact = () => {
     setLoading(true);
     try {
       await sendContactEmail(formData);
-      alert('Message sent successfully!');
+      toast.success('Message sent successfully!');
     } catch (error) {
       console.error('EmailJS error:', error);
-      alert('Failed to send message. Please try again.');
+      toast.error('Failed to send message. Please try again.');
     } finally {
       setLoading(false);
       setFormData({ fullName: '', message: '', email: '', phone: '' });
-      navigate("/");
+      setTimeout(() => navigate("/"), 5000);
     }
   };
 
@@ -104,6 +106,7 @@ const Contact = () => {
           </div>
         </Form>
       </div>
+      <ToastContainer position='top-center' autoClose={2000}/>
     </div>
   );
 };

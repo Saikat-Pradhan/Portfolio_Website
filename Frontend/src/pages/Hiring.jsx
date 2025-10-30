@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { sendHiringForm } from '../services/emailService';
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Hiring = () => {
   const navigate = useNavigate();
@@ -31,10 +33,10 @@ const Hiring = () => {
     setLoading(true);
     try {
       await sendHiringForm(formData);
-      alert('Hiring request submitted successfully!');
+      toast.success("Hiring request submitted successfully!");
     } catch (error) {
       console.error('EmailJS error:', error);
-      alert('Failed to submit. Please try again.');
+      toast.error("Failed to submit. Please try again.");
     } finally {
       setLoading(false);
       setFormData({
@@ -46,7 +48,7 @@ const Hiring = () => {
         email: '',
         phone: '',
       });
-      navigate("/");
+      setTimeout(() => navigate("/"), 5000);
     }
   };
 
@@ -156,6 +158,7 @@ const Hiring = () => {
           </div>
         </Form>
       </div>
+      <ToastContainer position='top-center' autoClose={2000}/>
     </div>
   );
 };
