@@ -10,6 +10,8 @@ import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import WebDevelopmentProjects from './pages/WebDevelopmentProjects'
 import Certificates from './pages/Certificates'
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const router=createBrowserRouter([
   {path:"/",element:<MainNavigation/>,children:[
@@ -28,6 +30,7 @@ const router=createBrowserRouter([
 export default function App() {
   return (
    <>
+    <ToastContainer position='top-center' autoClose={2000}/>
     <RouterProvider router={router}></RouterProvider>
    </>
   )

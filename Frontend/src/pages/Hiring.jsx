@@ -3,8 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { sendHiringForm } from '../services/emailService';
-import {ToastContainer, toast} from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast} from "react-toastify";
 
 const Hiring = () => {
   const navigate = useNavigate();
@@ -158,7 +157,6 @@ const Hiring = () => {
           </div>
         </Form>
       </div>
-      <ToastContainer position='top-center' autoClose={2000}/>
     </div>
   );
 };
