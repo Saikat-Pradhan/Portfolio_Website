@@ -8,7 +8,7 @@ const About = () => {
           <h1 className="title-font sm:text-4xl text-3xl mb-[1cm] font-medium text-blue-500">
             About Me
           </h1>
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8 leading-relaxed text-white">
             I am currently pursuing a Bachelor of Technology in Computer Science and Engineering, in my third year at Sister Nivedita University. My interests revolve around web development, creative problem solving, and exploring emerging technologies that shape the future of digital experiences. I'm passionate about staying up-to-date with industry trends and contributing to tech communities that foster growth and innovation.          </p>
           <p className="mb-8 leading-relaxed">
             Outside of coding, I find joy in creative pursuits like drawing and immersing myself in music. These hobbies not only refresh my mind but often spark unexpected inspiration for my projects. Whether sketching ideas on paper or winding down with a favorite playlist, I believe that nurturing creativity in all its forms helps me stay balanced and brings fresh energy to my work.

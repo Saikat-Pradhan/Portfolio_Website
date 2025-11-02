@@ -150,7 +150,7 @@ const Hiring = () => {
             />
           </Form.Group>
 
-          <div className="text-center">
+          <div className="text-center text-white">
             <Button style={{ backgroundColor: 'blue' }} type="submit" disabled={loading}>
               {loading? 'Sending message... ' : 'Submit'}
             </Button>
